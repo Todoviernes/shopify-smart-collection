@@ -91,6 +91,7 @@ for product in all_products:
     if specific_tag not in tags:
         new_tags = ', '.join(tags + [alternative_tag])
         update_product_tags(product['id'], new_tags)
+        time.sleep(0.5) # Wait half a second to avoid rate limiting
 
 # Create a new smart collection
 collection_title = 'Spring35'

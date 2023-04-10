@@ -57,19 +57,19 @@ The script will:
 
 Retrieves all products from the Shopify store using cursor-based pagination.
 
-### Returns
+***Returns***
 
 `list` - A list of all products in the store as dictionaries.
 
 `create_smart_collection(title, tag_to_include)`
 Creates a smart collection in the Shopify store with the specified title and a rule to include products with a specific tag.
 
-### Parameters
+***Parameters***
 
 - `title` (str) - The title of the smart collection.
 - `tag_to_include` (str) - The tag to include in the smart collection rule.
 
-### Returns
+***Returns***
 
 - `init` or `None` - The ID of the created smart collection, or None if the creation failed.
 
@@ -77,7 +77,7 @@ Creates a smart collection in the Shopify store with the specified title and a r
 
 Updates the tags of a product in the Shopify store.
 
-### Parameters
+***Parameters***
 
 - `product_id` (int) - The ID of the product to update.
 - `new_tags` (str) - The new tags for the product as a comma-separated string.
