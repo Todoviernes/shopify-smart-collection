@@ -12,29 +12,29 @@ This Python script creates a smart collection in a Shopify store containing prod
 
 1. Clone this repository or download the script.
 
-2. Install the required libraries:
+2. Install the required     libraries:
 
-```bash
-pip install -r requirements.txt
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 3. Create a .env file in the same directory as your script with the following content:
 
-```env
-STORE_URL=https://your-store.myshopify.com/admin/api/2023-01
-ACCESS_TOKEN=your-access-token
-```
+    ```env
+    STORE_URL=https://your-store.myshopify.com/admin/api/2023-01
+    ACCESS_TOKEN=your-access-token
+    ```
 
-Replace your-store.myshopify.com and your-access-token with your store's URL and access token.
+    Replace your-store.myshopify.com and your-access-token with your store's URL and access token.
 
 4. Open the script and update the specific_tag and alternative_tag variables with the tags you want to use for filtering products and creating the smart collection:
 
-```python
-specific_tag = 'your-specific-tag'
-alternative_tag = 'alternative_tag'
-```
+    ```python
+    specific_tag = 'your-specific-tag'
+    alternative_tag = 'alternative_tag'
+    ```
 
-Replace your-specific-tag with the tag you want to filter out and Not_New with the alternative tag you want to add to products without the specific tag.
+    Replace your-specific-tag with the tag you want to filter out and Not_New with the alternative tag you want to add to products without the specific tag.
 
 ## Usage
 
@@ -59,10 +59,10 @@ Retrieves all products from the Shopify store using cursor-based pagination.
 
 ***Returns***
 
-`list` - A list of all products in the store as dictionaries.
+- `list` - A list of all products in the store as dictionaries.
 
-`create_smart_collection(title, tag_to_include)`
-Creates a smart collection in the Shopify store with the specified title and a rule to include products with a specific tag.
+- `create_smart_collection(title, tag_to_include)`
+  Creates a smart collection in the Shopify store with the specified title and a rule to include products with a specific tag.
 
 ***Parameters***
 
@@ -73,9 +73,9 @@ Creates a smart collection in the Shopify store with the specified title and a r
 
 - `init` or `None` - The ID of the created smart collection, or None if the creation failed.
 
-`update_product_tags(product_id, new_tags)`
+- `update_product_tags(product_id, new_tags)`
 
-Updates the tags of a product in the Shopify store.
+  Updates the tags of a product in the Shopify store.
 
 ***Parameters***
 
